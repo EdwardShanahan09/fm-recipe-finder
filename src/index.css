@@ -31,7 +31,13 @@ html {
 }
 
 body {
+  background-color: var(--color-neutral-300);
   font-family: var(--primary-font);
+}
+
+.container {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 /* Base Typography */

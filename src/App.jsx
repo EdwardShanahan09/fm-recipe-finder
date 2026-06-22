@@ -1,16 +1,7 @@
-const App = () => {
-  return (
-    <div>
-      <h1>Hello World!</h1>
+import Navbar from "./components/Navbar/Navbar";
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
-        corrupti similique laudantium molestiae est adipisci provident,
-        voluptate, quis, ipsam labore explicabo praesentium suscipit ratione
-        nesciunt! At eligendi dolor nam.
-      </p>
-    </div>
-  );
+const App = () => {
+  return <Navbar />;
 };
 
 export default App;
