@@ -29,9 +29,22 @@
   left: 1.6rem;
   right: 1.6rem;
   padding: 0.8rem;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 220ms ease,
+    opacity 220ms ease;
 }
 
-.navbar__menu-item:not(:last-child) {
+.navbar__menu-list.active {
+  transform: scaleY(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navbar__menu-item {
   margin-bottom: 1.2rem;
 }
 
@@ -40,4 +53,8 @@
   font-size: 1.8rem;
   line-height: 150%;
   text-decoration: none;
+}
+
+.navbar__menu-list .btn {
+  width: 100%;
 }
