@@ -91,6 +91,12 @@ p {
 }
 
 @media (min-width: 768px) {
+  /* Global */
+
+  .container {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
   /* Base Typography */
 
   .text-preset-1 {
