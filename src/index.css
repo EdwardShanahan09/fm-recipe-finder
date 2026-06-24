@@ -109,9 +109,10 @@ p {
 }
 
 @media (min-width: 1440px) {
-  /* Base Typography */
+  /* Global */
 
-  .text-preset-1 {
-    font-size: 6.4rem;
+  .container {
+    padding-left: 12.4rem;
+    padding-right: 12.4rem;
   }
 }

@@ -17,12 +17,31 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <img className="navbar__logo" src={logo} alt="Logo" />
+
         <img
           onClick={handleMenuToggle}
-          className="navbar__menu"
+          className="navbar__menu-icon"
           src={menuIcon}
           alt="Menu Icon"
         />
+        <ul className="navbar__list">
+          <li className="navbar__item">
+            <a href="" className="navbar__link">
+              Home
+            </a>
+          </li>
+          <li className="navbar__item">
+            <a href="" className="navbar__link">
+              About
+            </a>
+          </li>
+          <li className="navbar__item">
+            <a href="" className="navbar__link">
+              Recipes
+            </a>
+          </li>
+        </ul>
+        <Button text="Browse recipes" size="large" className="navbar__cta" />
         <ul className={`navbar__menu-list ${isOpen ? "active" : ""}`}>
           <li className="navbar__menu-item">
             <a className="navbar__menu-link" href="">

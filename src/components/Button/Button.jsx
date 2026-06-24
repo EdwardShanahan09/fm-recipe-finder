@@ -1,16 +1,10 @@
 import "./Button.css";
 
-const Button = ({
-  text,
-  size = "small",
-  type = "button",
-  className = "",
-  ...rest
-}) => {
+const Button = ({ text, size, className = "" }) => {
   const fontSize = size === "large" ? "2rem" : "1.6rem";
-  const classes = ["button", "btn", className].filter(Boolean).join(" ");
+
   return (
-    <button type={type} className={classes} style={{ fontSize }} {...rest}>
+    <button className={`button ${className}`} style={{ fontSize }}>
       {text}
     </button>
   );
