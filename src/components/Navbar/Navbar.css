@@ -53,7 +53,14 @@
 }
 
 .navbar__menu-item {
-  margin-bottom: 1.2rem;
+}
+
+.navbar__menu-item:not(:last-child) {
+  padding: 1.2rem;
+}
+
+.navbar__menu-item:last-child {
+  margin-top: 1.2rem;
 }
 
 .navbar__menu-link {
@@ -63,7 +70,7 @@
   text-decoration: none;
 }
 
-.navbar__menu-list .btn {
+.navbar__menu-list .button {
   width: 100%;
 }
 
