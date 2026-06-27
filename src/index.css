@@ -40,6 +40,11 @@ body {
   padding-right: 1.6rem;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* Base Typography */
 
 h1,
