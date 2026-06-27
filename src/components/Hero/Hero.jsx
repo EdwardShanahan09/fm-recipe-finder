@@ -1,3 +1,4 @@
+import "./Hero.css";
 import heroImgSmall from "../../assets/images/hero-small.webp";
 import heroImgLarge from "../../assets/images/hero-large.webp";
 import heroPatternImg from "../../assets/images/hero-pattern.svg";
@@ -6,17 +7,21 @@ import Button from "../Button/Button";
 const Hero = () => {
   return (
     <div className="hero">
-      <h1 className="text-preset-1">Healthy meals, zero fuss</h1>
+      <div className="hero__text">
+        <h1 className="text-preset-1">
+          <span className="hero__highlight">Healthy</span> meals, zero fuss
+        </h1>
 
-      <p>
-        Discover eight quick, whole-food recipes that you can cook tonight—no
-        processed junk, no guesswork.
-      </p>
+        <p className="hero__description">
+          Discover eight quick, whole-food recipes that you can cook tonight—no
+          processed junk, no guesswork.
+        </p>
 
-      <Button text="Start exploring" size="large" className="hero__cta" />
+        <Button text="Start exploring" size="large" className="hero__cta" />
+      </div>
 
       <picture className="hero__img">
-        <source src={heroImgLarge} media="(min-width: 768px)" />
+        <source srcSet={heroImgLarge} media="(min-width: 768px)" />
         <img
           className="hero__img"
           src={heroImgSmall}

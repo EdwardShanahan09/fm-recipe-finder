@@ -59,6 +59,7 @@ h4 {
   font-weight: 800;
   line-height: 120%;
   letter-spacing: -0.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .text-preset-2 {
@@ -119,5 +120,9 @@ p {
   .container {
     padding-left: 12.4rem;
     padding-right: 12.4rem;
+  }
+
+  .text-preset-1 {
+    font-size: 7.2rem;
   }
 }
