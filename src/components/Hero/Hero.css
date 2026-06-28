@@ -1,5 +1,6 @@
 .hero {
   margin-bottom: 6.4rem;
+  position: relative;
 }
 
 .hero__highlight {
@@ -45,6 +46,20 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero__visual {
+  position: relative;
+}
+
+.hero__pattern {
+  max-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 /* Media Query Tablet */

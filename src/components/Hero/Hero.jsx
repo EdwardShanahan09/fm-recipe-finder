@@ -20,20 +20,22 @@ const Hero = () => {
         <Button text="Start exploring" size="large" className="hero__cta" />
       </div>
 
-      <picture className="hero__img">
-        <source srcSet={heroImgLarge} media="(min-width: 768px)" />
-        <img
-          className="hero__img"
-          src={heroImgSmall}
-          alt="Person cooking a healthy meal"
-        />
-      </picture>
+      <div className="hero__visual">
+        <picture className="hero__img">
+          <source srcSet={heroImgLarge} media="(min-width: 768px)" />
+          <img
+            className="hero__img"
+            src={heroImgSmall}
+            alt="Person cooking a healthy meal"
+          />
+        </picture>
 
-      <img
-        className="hero__pattern"
-        src={heroPatternImg}
-        alt="Pattern Illustration"
-      />
+        <img
+          className="hero__pattern"
+          src={heroPatternImg}
+          alt="Pattern Illustration"
+        />
+      </div>
     </div>
   );
 };
