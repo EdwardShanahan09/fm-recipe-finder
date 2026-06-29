@@ -1,0 +1,36 @@
+.features {
+  margin-bottom: 6.4rem;
+}
+
+.features h2 {
+  margin-bottom: 3.2rem;
+}
+
+.features__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .features {
+    margin-bottom: 8rem;
+    border-bottom: 1px solid var(--color-neutral-200);
+  }
+
+  .features h2 {
+    margin-bottom: 4.8rem;
+  }
+
+  .features__list {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features__list {
+    flex-direction: row;
+    margin-bottom: 10rem;
+  }
+}

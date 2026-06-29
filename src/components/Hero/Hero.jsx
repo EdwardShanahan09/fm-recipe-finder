@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero__text">
         <h1 className="text-preset-1">
           <span className="hero__highlight">Healthy</span> meals, zero fuss
@@ -36,7 +36,7 @@ const Hero = () => {
           alt="Pattern Illustration"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
