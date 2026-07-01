@@ -6,11 +6,12 @@ const RealLife = () => {
   return (
     <section className="real-life">
       <div className="real-life__text">
-        <h2 className="text-preset-2">Built for real life</h2>
+        <h2 className="text-preset-2 real-life__title">Built for real life</h2>
+
         <p className="real-life__description">
-          Cooking shouldn’t be complicated. These recipes come in under
-          <span>30 minutes</span>
-          of active time, fit busy schedules, and taste good enough to repeat.
+          Cooking shouldn’t be complicated. These recipes come in under{" "}
+          <span>30 minutes</span> of active time, fit busy schedules, and taste
+          good enough to repeat.
         </p>
 
         <p className="real-life__description">
