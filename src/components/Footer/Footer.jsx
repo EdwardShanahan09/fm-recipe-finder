@@ -1,6 +1,7 @@
 import blueskyIcon from "../../assets/icons/icon-bluesky.svg";
 import tiktokIcon from "../../assets/icons/icon-tiktok.svg";
 import instagramIcon from "../../assets/icons/icon-instagram.svg";
+import "./Footer.css";
 
 const Footer = () => {
   return (
