@@ -1,6 +1,6 @@
-import Feature1Icon from "../../assets/icons/icon-feature-1.svg";
-import Feature2Icon from "../../assets/icons/icon-feature-2.svg";
-import Feature3Icon from "../../assets/icons/icon-feature-3.svg";
+import Feature1Icon from "../../../assets/icons/icon-feature-1.svg";
+import Feature2Icon from "../../../assets/icons/icon-feature-2.svg";
+import Feature3Icon from "../../../assets/icons/icon-feature-3.svg";
 import Feature from "../Feature/Feature";
 import "./Features.css";
 

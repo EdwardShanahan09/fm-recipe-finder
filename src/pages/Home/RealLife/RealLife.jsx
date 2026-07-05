@@ -1,6 +1,6 @@
 import "./RealLife.css";
-import realLifeImgSmall from "../../assets/images/real-life-small.webp";
-import realLifeImgLarge from "../../assets/images/real-life-large.webp";
+import realLifeImgSmall from "../../../assets/images/real-life-small.webp";
+import realLifeImgLarge from "../../../assets/images/real-life-large.webp";
 
 const RealLife = () => {
   return (
