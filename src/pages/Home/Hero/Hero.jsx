@@ -1,8 +1,8 @@
 import "./Hero.css";
-import heroImgSmall from "../../assets/images/hero-small.webp";
-import heroImgLarge from "../../assets/images/hero-large.webp";
-import heroPatternImg from "../../assets/images/hero-pattern.svg";
-import Button from "../Button/Button";
+import heroImgSmall from "../../../assets/images/hero-small.webp";
+import heroImgLarge from "../../../assets/images/hero-large.webp";
+import heroPatternImg from "../../../assets/images/hero-pattern.svg";
+import Button from "../../../components/Button/Button";
 
 const Hero = () => {
   return (

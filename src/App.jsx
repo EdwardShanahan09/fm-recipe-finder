@@ -1,22 +1,22 @@
-import CTA from "./components/CTA/CTA";
-import Features from "./components/Features/Features";
-import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import RealLife from "./components/RealLife/RealLife";
+import Footer from "./components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Recipes from "./pages/Recipes/Recipes";
 
 const App = () => {
   return (
     <>
       <Navbar />
       <main className="container">
-        <Hero />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Features />
+          <Route path="/about" element={<About />} />
 
-        <RealLife />
-
-        <CTA />
+          <Route path="/recipes" element={<Recipes />} />
+        </Routes>
       </main>
 
       <Footer />
