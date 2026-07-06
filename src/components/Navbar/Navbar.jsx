@@ -3,14 +3,13 @@ import logo from "../../assets/icons/logo.svg";
 import menuIcon from "../../assets/icons/icon-menu.svg";
 import Button from "../Button/Button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuToggle = () => {
-    console.log(isOpen);
     isOpen ? setIsOpen(false) : setIsOpen(true);
-    console.log(isOpen);
   };
 
   return (
@@ -26,37 +25,37 @@ const Navbar = () => {
         />
         <ul className="navbar__list">
           <li className="navbar__item">
-            <a href="" className="navbar__link">
+            <Link to="/" className="navbar__link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="" className="navbar__link">
+            <Link to="/about" className="navbar__link">
               About
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="" className="navbar__link">
+            <Link to="/recipes" className="navbar__link">
               Recipes
-            </a>
+            </Link>
           </li>
         </ul>
         <Button text="Browse recipes" size="large" className="navbar__cta" />
         <ul className={`navbar__menu-list ${isOpen ? "active" : ""}`}>
           <li className="navbar__menu-item">
-            <a className="navbar__menu-link" href="">
+            <Link to="/" className="navbar__menu-link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar__menu-item">
-            <a className="navbar__menu-link" href="">
+            <Link to="/about" className="navbar__menu-link">
               About
-            </a>
+            </Link>
           </li>
           <li className="navbar__menu-item">
-            <a className="navbar__menu-link" href="">
+            <Link to="/recipes" className="navbar__menu-link">
               Recipes
-            </a>
+            </Link>
           </li>
 
           <li className="navbar__menu-item">

@@ -50,11 +50,8 @@
   pointer-events: auto;
 }
 
-.navbar__cta {
+a.navbar__cta {
   display: none;
-}
-
-.navbar__menu-item {
 }
 
 .navbar__menu-item:not(:last-child) {
