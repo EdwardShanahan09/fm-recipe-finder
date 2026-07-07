@@ -1,5 +1,11 @@
+import Mission from "./Mission/Mission";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <Mission />
+    </>
+  );
 };
 
 export default About;
