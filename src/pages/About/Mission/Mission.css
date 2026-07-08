@@ -1,0 +1,19 @@
+.mission {
+  margin-bottom: 6.5rem;
+}
+
+.mission__title {
+  margin-bottom: 2.4rem;
+}
+
+.mission__description:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.mission__description:last-child {
+  margin-bottom: 4rem;
+}
+
+.mission__img {
+  border-radius: 1.1rem;
+}

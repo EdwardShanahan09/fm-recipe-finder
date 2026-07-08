@@ -1,5 +1,6 @@
 import missionImgSmall from "../../../assets/images/mission-small.webp";
 import missionImgLarge from "../../../assets/images/mission-large.webp";
+import "./Mission.css";
 
 const Mission = () => {
   return (
