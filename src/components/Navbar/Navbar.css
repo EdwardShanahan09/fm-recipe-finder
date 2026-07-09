@@ -130,4 +130,8 @@ a.navbar__cta {
   .navbar__link:hover {
     border-bottom: 0.3rem solid var(--color-primary);
   }
+
+  .navbar__link.active {
+    border-bottom: 0.3rem solid var(--color-primary);
+  }
 }

@@ -3,7 +3,7 @@ import logo from "../../assets/icons/logo.svg";
 import menuIcon from "../../assets/icons/icon-menu.svg";
 import Button from "../Button/Button";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <img className="navbar__logo" src={logo} alt="Logo" />
+        <NavLink to="/" end>
+          <img className="navbar__logo" src={logo} alt="Logo" />
+        </NavLink>
 
         <img
           onClick={handleMenuToggle}
@@ -25,37 +27,67 @@ const Navbar = () => {
         />
         <ul className="navbar__list">
           <li className="navbar__item">
-            <Link to="/" className="navbar__link">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "navbar__link active" : "navbar__link"
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar__item">
-            <Link to="/about" className="navbar__link">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "navbar__link active" : "navbar__link"
+              }
+            >
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar__item">
-            <Link to="/recipes" className="navbar__link">
+            <NavLink
+              to="/recipes"
+              className={({ isActive }) =>
+                isActive ? "navbar__link active" : "navbar__link"
+              }
+            >
               Recipes
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <Button text="Browse recipes" size="large" className="navbar__cta" />
         <ul className={`navbar__menu-list ${isOpen ? "active" : ""}`}>
           <li className="navbar__menu-item">
-            <Link to="/" className="navbar__menu-link">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "navbar__menu-link active" : "navbar__menu-link"
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar__menu-item">
-            <Link to="/about" className="navbar__menu-link">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "navbar__menu-link active" : "navbar__menu-link"
+              }
+            >
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar__menu-item">
-            <Link to="/recipes" className="navbar__menu-link">
+            <NavLink
+              to="/recipes"
+              className={({ isActive }) =>
+                isActive ? "navbar__menu-link active" : "navbar__menu-link"
+              }
+            >
               Recipes
-            </Link>
+            </NavLink>
           </li>
 
           <li className="navbar__menu-item">
