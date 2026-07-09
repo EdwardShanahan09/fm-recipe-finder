@@ -1,11 +1,14 @@
 import missionImgSmall from "../../../assets/images/mission-small.webp";
 import missionImgLarge from "../../../assets/images/mission-large.webp";
+import missionPattern from "../../../assets/images/pattern-squiggle.svg";
 import "./Mission.css";
 
 const Mission = () => {
   return (
     <div className="mission">
       <div className="mission__text">
+        <div className="mission__label">Our Mission</div>
+
         <h2 className="text-preset-2 mission__title">
           Help more people cook nourishing meals, more often.
         </h2>
@@ -31,6 +34,12 @@ const Mission = () => {
             alt="Person cooking a healthy meal"
           />
         </picture>
+
+        <img
+          className="mission__pattern"
+          src={missionPattern}
+          alt="Pattern decoration"
+        />
       </div>
     </div>
   );

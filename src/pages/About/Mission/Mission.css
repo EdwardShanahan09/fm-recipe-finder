@@ -2,6 +2,17 @@
   margin-bottom: 6.5rem;
 }
 
+.mission__label {
+  color: var(--color-neutral-900);
+  background-color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+
 .mission__title {
   margin-bottom: 2.4rem;
 }
@@ -16,4 +27,39 @@
 
 .mission__img {
   border-radius: 1.1rem;
+}
+
+.mission__pattern {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mission {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+
+  .mission__text {
+    padding-right: 6.4rem;
+  }
+
+  .mission__img {
+    z-index: -2;
+  }
+
+  .mission__pattern {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    z-index: 3;
+  }
 }
