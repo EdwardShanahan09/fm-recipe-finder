@@ -1,5 +1,7 @@
 import Mission from "./Mission/Mission";
 import Purpose from "./Propose/Purpose";
+import Vision from "./Vision/Vision";
+import CTA from "../../components/CTA/CTA";
 
 const About = () => {
   return (
@@ -7,6 +9,10 @@ const About = () => {
       <Mission />
 
       <Purpose />
+
+      <Vision />
+
+      <CTA />
     </>
   );
 };

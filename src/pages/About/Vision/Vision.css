@@ -1,0 +1,15 @@
+.vision {
+  margin-bottom: 4.8rem;
+}
+
+@media (min-width: 768px) {
+  .vision {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .vision {
+    margin-bottom: 10rem;
+  }
+}
