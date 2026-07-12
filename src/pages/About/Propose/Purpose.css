@@ -1,5 +1,7 @@
 .purpose {
-  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+  padding-bottom: 4.8rem;
+  border-bottom: 1px solid var(--color-neutral-200);
 }
 
 .purpose__title {
@@ -10,7 +12,6 @@
   position: relative;
   list-style: none;
   padding-left: 4rem;
-  margin-bottom: 2.4rem;
 }
 
 .purpose__item:not(:last-child) {
@@ -36,7 +37,7 @@
 @media (min-width: 768px) {
   .purpose {
     padding-bottom: 8rem;
-    border-bottom: 1px solid var(--color-neutral-200);
+    margin-bottom: 8rem;
   }
 
   .purpose__item:not(:last-child) {
@@ -50,6 +51,7 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-bottom: 10rem;
+    margin-bottom: 10rem;
   }
   .purpose__title {
     flex-basis: 30%;
