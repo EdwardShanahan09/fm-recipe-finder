@@ -2,14 +2,52 @@
   margin-bottom: 4.8rem;
 }
 
+.vision__title {
+  margin-bottom: 2rem;
+}
+
+.vision__description {
+  margin-bottom: 1.2rem;
+}
+
+.vision__list {
+  padding-left: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.vision__item {
+  color: var(--color-neutral-600);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.vision__img {
+  border-radius: 1.1rem;
+}
+
 @media (min-width: 768px) {
   .vision {
     margin-bottom: 8rem;
+  }
+
+  .vision__list {
+    margin-bottom: 4rem;
   }
 }
 
 @media (min-width: 1440px) {
   .vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 10rem;
+  }
+
+  .vision__text {
+    flex-basis: 35%;
+  }
+
+  .vision__visual {
+    flex-basis: 60%;
   }
 }
