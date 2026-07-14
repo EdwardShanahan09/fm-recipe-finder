@@ -1,5 +1,11 @@
+import Intro from "./Intro/Intro";
+
 const Recipes = () => {
-  return <div>Recipes</div>;
+  return (
+    <>
+      <Intro />
+    </>
+  );
 };
 
 export default Recipes;
