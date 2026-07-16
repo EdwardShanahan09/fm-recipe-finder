@@ -1,5 +1,6 @@
 import Intro from "./Intro/Intro";
 import RecipeFilters from "./RecipeFilters/RecipeFilters";
+import RecipesList from "./RecipesList/RecipesList";
 
 const Recipes = () => {
   return (
@@ -7,6 +8,8 @@ const Recipes = () => {
       <Intro />
 
       <RecipeFilters />
+
+      <RecipesList />
     </>
   );
 };

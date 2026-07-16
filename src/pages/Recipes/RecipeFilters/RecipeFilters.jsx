@@ -1,5 +1,5 @@
 import SearchIcon from "../../../assets/icons/icon-search.svg";
-
+import "./RecipeFilters.css";
 const RecipeFilters = () => {
   return (
     <section className="filters">
