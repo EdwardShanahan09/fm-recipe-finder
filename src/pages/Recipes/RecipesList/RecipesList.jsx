@@ -1,5 +1,5 @@
 import recipes from "../../../data.json";
-
+import "./RecipesList.css";
 const RecipesList = () => {
   return (
     <section className="recipes-list">

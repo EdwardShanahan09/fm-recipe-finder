@@ -11,9 +11,8 @@
 
 @media (min-width: 1440px) {
   .intro {
-    text-align: center;
-    margin-bottom: 6.4rem;
     width: 70%;
-    margin: 0 auto 6.4rem auto 0;
+    text-align: center;
+    margin: 0 auto 6.4rem auto;
   }
 }

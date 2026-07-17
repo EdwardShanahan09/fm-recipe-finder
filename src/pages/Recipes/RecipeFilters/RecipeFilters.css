@@ -6,4 +6,9 @@
 }
 
 @media (min-width: 1440px) {
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
