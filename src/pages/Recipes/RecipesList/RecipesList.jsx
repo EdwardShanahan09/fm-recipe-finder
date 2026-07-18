@@ -1,13 +1,22 @@
 import recipes from "../../../data.json";
+import Card from "../../../components/Card/Card";
 import "./RecipesList.css";
+
 const RecipesList = () => {
   return (
     <section className="recipes-list">
       {recipes.map((recipe) => (
-        <div key={recipe.id}>
-          <img src={recipe.image.small} alt="recipe" />
-          <h2>{recipe.title}</h2>
-        </div>
+        <Card
+          key={recipe.id}
+          id={recipe.id}
+          imageSmall={recipe.image.small}
+          imageLarge={recipe.image.large}
+          title={recipe.title}
+          overview={recipe.overview}
+          servings={recipe.servings}
+          prep={recipe.prepMinutes}
+          cook={recipe.cookMinutes}
+        />
       ))}
     </section>
   );

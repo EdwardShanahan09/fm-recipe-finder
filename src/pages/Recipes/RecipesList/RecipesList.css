@@ -1,5 +1,15 @@
 .recipes-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-columns: 1fr;
+  row-gap: 3.2rem;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+  }
 }

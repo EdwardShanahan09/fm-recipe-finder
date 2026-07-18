@@ -15,3 +15,8 @@
 .button:hover {
   background-color: var(--color-neutral-600);
 }
+
+.button--pill {
+  width: 100%;
+  border-radius: 999px;
+}
