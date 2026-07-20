@@ -4,6 +4,7 @@ import cookIcon from "../../assets/icons/icon-cook-time.svg";
 import { Link, useParams } from "react-router-dom";
 import recipes from "../../data.json";
 import Card from "../../components/Card/Card";
+import "./Recipe.css";
 
 const Recipe = () => {
   const { id } = useParams();
@@ -40,18 +41,14 @@ const Recipe = () => {
           <span> / {title}</span>
         </div>
 
-        <picture className="">
+        <picture className="recipe__visual">
           <source srcSet={imageLarge} media="(min-width: 768px)" />
-          <img
-            className=""
-            src={imageSmall}
-            alt="Person cooking a healthy meal"
-          />
+          <img src={imageSmall} alt="Person cooking a healthy meal" />
         </picture>
       </div>
 
       <div className="recipe__text">
-        <h2 className="text-preset-2">{title}</h2>
+        <h2 className="text-preset-2 recipe__title">{title}</h2>
 
         <p className="recipe__description">{overview}</p>
 
@@ -76,7 +73,7 @@ const Recipe = () => {
         </div>
 
         <div className="recipes__ingredients">
-          <h4>Ingredients:</h4>
+          <h4 className="text-preset-4">Ingredients:</h4>
           <ul className="recipe__list">
             {ingredients.map((ingredient, index) => (
               <li key={index}>{ingredient}</li>
