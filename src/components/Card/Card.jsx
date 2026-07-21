@@ -18,7 +18,7 @@ const Card = ({
     <div className="card">
       <picture className="card__img">
         <source srcSet={imageLarge} media="(min-width: 768px)" />
-        <img className="mission__img" src={imageSmall} alt={title} />
+        <img className="card__img" src={imageSmall} alt={title} />
       </picture>
 
       <div className="card__text">

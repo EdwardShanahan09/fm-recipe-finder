@@ -76,23 +76,27 @@ const Recipe = () => {
           <h4 className="text-preset-4">Ingredients:</h4>
           <ul className="recipe__list">
             {ingredients.map((ingredient, index) => (
-              <li key={index}>{ingredient}</li>
+              <li key={index} className="recipe__item">
+                {ingredient}
+              </li>
             ))}
           </ul>
         </div>
 
         <div className="recipes__instructions">
-          <h4>Instructions:</h4>
+          <h4 className="text-preset-4">Instructions:</h4>
           <ul className="recipe__list">
             {ingredients.map((ingredient, index) => (
-              <li key={index}>{ingredient}</li>
+              <li key={index} className="recipe__item">
+                {ingredient}
+              </li>
             ))}
           </ul>
         </div>
       </div>
 
       <div className="recipe__more">
-        <h3>More recipes</h3>
+        <h3 className="text-preset-3">More recipes</h3>
         <div className="recipe__more-cards">
           {randomRecipes.map((recipe) => (
             <Card
