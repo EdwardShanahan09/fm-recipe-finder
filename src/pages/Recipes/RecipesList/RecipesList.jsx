@@ -1,8 +1,7 @@
-import recipes from "../../../data.json";
 import Card from "../../../components/Card/Card";
 import "./RecipesList.css";
 
-const RecipesList = () => {
+const RecipesList = ({ recipes }) => {
   return (
     <section className="recipes-list">
       {recipes.map((recipe) => (

@@ -1,6 +1,6 @@
 import SearchIcon from "../../../assets/icons/icon-search.svg";
 import "./RecipeFilters.css";
-const RecipeFilters = () => {
+const RecipeFilters = ({ search, setSearch }) => {
   return (
     <section className="filters">
       <select name="prep-time" id="prep-time">
@@ -22,7 +22,12 @@ const RecipeFilters = () => {
       <div className="filters__search">
         <img src={SearchIcon} alt="Search Icon" />
 
-        <input placeholder="Search by name or ingredient…" type="text" />
+        <input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search by name or ingredient…"
+          type="text"
+        />
       </div>
     </section>
   );
