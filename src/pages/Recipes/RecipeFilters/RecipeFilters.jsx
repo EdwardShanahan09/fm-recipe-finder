@@ -1,16 +1,35 @@
 import SearchIcon from "../../../assets/icons/icon-search.svg";
 import "./RecipeFilters.css";
-const RecipeFilters = ({ search, setSearch }) => {
+const RecipeFilters = ({
+  search,
+  setSearch,
+  maxPrepTime,
+  setMaxPrepTime,
+  maxCookTime,
+  setMaxCookTime,
+}) => {
   return (
     <section className="filters">
-      <select name="prep-time" id="prep-time">
+      <select
+        value={maxPrepTime}
+        onChange={(e) => setMaxPrepTime(e.target.value)}
+        name="prep-time"
+        id="prep-time"
+      >
         <option value="">Max Prep Time</option>
         <option value="0">0 Minutes</option>
         <option value="5">5 Minutes</option>
         <option value="10">10 Minutes</option>
       </select>
 
-      <select name="cook-time" id="cook-time">
+      <select
+        value={maxCookTime}
+        onChange={(e) => {
+          setMaxCookTime(e.target.value);
+        }}
+        name="cook-time"
+        id="cook-time"
+      >
         <option value="">Max Cook Time</option>
         <option value="0">0 Minutes</option>
         <option value="5">5 Minutes</option>

@@ -42,7 +42,7 @@ const Card = ({
           <div>
             <img src={cookIcon} alt="Cook Icon" />
 
-            <span>Cook Time: {prep}mins</span>
+            <span>Cook Time: {cook}mins</span>
           </div>
         </div>
 

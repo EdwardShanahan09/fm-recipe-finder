@@ -6,24 +6,43 @@ import { useState } from "react";
 
 const Recipes = () => {
   const [search, setSearch] = useState("");
+  const [maxPrepTime, setMaxPrepTime] = useState("");
+  const [maxCookTime, setMaxCookTime] = useState("");
+
   const filteredRecipes = recipes.filter((recipe) => {
-    const searchTerm = search.toLowerCase();
+    const searchTerm = search.toLowerCase().trim();
 
     const matchTitle = recipe.title.toLowerCase().includes(searchTerm);
+
     const matchIngredients = recipe.ingredients.some((ingredient) =>
       ingredient.toLowerCase().includes(searchTerm),
     );
 
-    return matchTitle || matchIngredients;
+    const matchPrepTime =
+      maxPrepTime === "" || recipe.prepMinutes <= Number(maxPrepTime);
+
+    const matchCookTime =
+      maxCookTime === "" || recipe.cookMinutes <= Number(maxCookTime);
+
+    const matchSearch = searchTerm === "" || matchTitle || matchIngredients;
+
+    return matchSearch && matchPrepTime && matchCookTime;
   });
 
-  console.log(search);
+  console.log(maxCookTime);
 
   return (
     <>
       <Intro />
 
-      <RecipeFilters search={search} setSearch={setSearch} />
+      <RecipeFilters
+        search={search}
+        setSearch={setSearch}
+        maxPrepTime={maxPrepTime}
+        setMaxPrepTime={setMaxPrepTime}
+        maxCookTime={maxCookTime}
+        setMaxCookTime={setMaxCookTime}
+      />
 
       <RecipesList recipes={filteredRecipes} />
     </>
